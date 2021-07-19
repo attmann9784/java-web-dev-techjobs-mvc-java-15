@@ -29,27 +29,27 @@
 <th:block th:fragment="listed-jobs">
     <table th:each="job : ${jobs}" class="job-listing">
         <tr>
-            <td>ID</td>
+            <td class="categories">ID</td>
             <td th:text="${job.id}"></td>
         </tr>
         <tr>
-            <td>Name</td>
+            <td class="categories">Name</td>
             <td th:text="${job.name}"></td>
         </tr>
         <tr>
-            <td>Employer</td>
+            <td class="categories">Employer</td>
             <td> <a th:href="@{/list/jobs(column=employer, value=${job.employer})}" th:text="${job.employer}"></a></td>
         </tr>
         <tr>
-            <td>Location</td>
+            <td class="categories">Location</td>
             <td> <a th:href="@{/list/jobs(column=location, value=${job.location})}"  th:text="${job.location}"></a></td>
         </tr>
         <tr>
-            <td>Position Type</td>
+            <td class="categories">Position Type</td>
             <td> <a th:href="@{/list/jobs(column=positionType, value=${job.positionType})}"  th:text="${job.positionType}"></a></td>
         </tr>
         <tr>
-            <td>Skill</td>
+            <td class="categories">Skill</td>
             <td> <a th:href="@{/list/jobs(column=coreCompetency, value=${job.coreCompetency})}"  th:text="${job.coreCompetency}"></a></td>
         </tr>
     </table>
