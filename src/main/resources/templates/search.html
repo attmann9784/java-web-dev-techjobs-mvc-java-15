@@ -48,13 +48,13 @@
             <td class="categories">Name</td>
             <td th:text="${job.name}"></td>
             <td class="categories">Employer</td>
-            <td> <a th:href="@{/list/jobs(column=employer, value=${job.employer})}" th:text="${job.employer}"></a></td>
+            <td> <a th:href="@{/search/results(searchType=employer, searchTerm=${job.employer})}" th:text="${job.employer}"></a></td>
             <td class="categories">Location</td>
-            <td> <a th:href="@{/list/jobs(column=location, value=${job.location})}"  th:text="${job.location}"></a></td>
+            <td> <a th:href="@{/search/results(searchType=location, searchTerm=${job.location})}" th:text="${job.location}"></a></td>
             <td class="categories">Position Type</td>
-            <td> <a th:href="@{/list/jobs(column=positionType, value=${job.positionType})}"  th:text="${job.positionType}"></a></td>
+            <td> <a th:href="@{/search/results(searchType=positionType, searchTerm=${job.positionType})}"  th:text="${job.positionType}"></a></td>
             <td class="categories">Skill</td>
-            <td> <a th:href="@{/list/jobs(column=coreCompetency, value=${job.coreCompetency})}"  th:text="${job.coreCompetency}"></a></td>
+            <td> <a th:href="@{/search/results(searchType=coreCompetency, searchTerm=${job.coreCompetency})}"  th:text="${job.coreCompetency}"></a></td>
         </tr>
     </table>
 </div>
