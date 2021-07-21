@@ -12,6 +12,7 @@ th {
 
 td {
     vertical-align: top;
+
 }
 
 tr:nth-child(odd) {
@@ -49,4 +50,8 @@ label {
     color:black;
     font-family: monospace;
     font-variant: small-caps;
+}
+
+.block {
+    display: block;
 }
